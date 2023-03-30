@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+To run this locally use three terminal 
+1) For Local Test Hardhat Blockchain : use | npx hardhat node
+2) To Deploy your upload.sol contract in Hardhat blockchain : use | npx hardhat run --network localhost scripts/deploy.js
+3) To run your React App : use | npm run start
+
+Make sure your METAMASK is connected to Your hardhat test blockchain.
+if not add it manually
+Network name     : HARDHAT
+New RPC url      : http://127.0.0.2:8545
+Chain Id         : 1337
+Currency symbol  : Eth
+
+Add any account that show on running `npx hardhat node` command using private key and import it in metamask
+
