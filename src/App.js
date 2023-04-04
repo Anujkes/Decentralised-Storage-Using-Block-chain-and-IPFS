@@ -2,6 +2,7 @@ import Upload from "./artifacts/contracts/Upload.sol/Upload.json";
 import {useState,useEffect} from "react";
 import { ethers } from "ethers";
 import FileUpload from "./components/FileUpload";
+import Navbar from "./components/Navbar";
 //import Display from "./components/Display";
 //import Modal from "./components/Modal";
 import './App.css';
@@ -69,12 +70,10 @@ function App() {
    },[]);
   return (
     <>
-    <div className="App" >
-  
-     <h1 style={{color:"white"}}>Decentralised Storage</h1>
-     <div className="bg"></div>
-     <div className="bg bg2"></div>
-     <div className="bg bg3"></div>
+     
+    <div className="App"  > 
+    <Navbar/>
+   
      <p style={{color:"white"}}>Account : {account?account:"Not Connected"}</p>
      <FileUpload account={account} provider={provider} contract={contract}></FileUpload>
      <Display contract={contract} account={account}></Display>

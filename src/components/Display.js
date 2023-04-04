@@ -11,7 +11,7 @@ export default function Display(props) {
        dataArray=await props.contract.Display(Otheraddress);
        console.log(dataArray);
      }else{
-      dataArray=await props.contract.display(props.account);
+      dataArray = await props.contract.display(props.account);
      }
 
      const isEmpty = Object.keys(dataArray).length===0;
